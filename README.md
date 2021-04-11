@@ -21,3 +21,14 @@
  ``public class SuperCoolGuitarWithFlames extends Guitar {
     ```private String flameColor;``
 - instead of editing the existing code
+---
+### L = Liskov Substitution 
+- **If Class A is a subtype class of B, then we should be able to replace B with A without any disruptions**
+- this is not necesarily true, for if I have a boat interface that should be able to steer, accelerate, and turn on what if I have a sailboat which doesnt have a wheel that might be required for the steer function.
+- In this case I should rework my interface to account for this kind of instance of a boat that might not have a wheel.
+---
+### I = Interface Segregation
+- Larger interfaces should be split down into smaller interfaces so that when implementing interfaces into a class they only need to be concerned about methods from the interface that concerns their particular class.
+---
+### D = Dependency Inversion
+- The principle of Dependency Inversion refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
